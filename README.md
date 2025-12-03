@@ -7,7 +7,7 @@ This project was developed as a part of my **Unified Mentor Internship – Web D
 ---
 
 ## 🚀 Live Demo  
-🔗 **GitHub Pages:** https://Cyberangle002.github.io/expense-tracker  
+🔗 **GitHub Pages:** https://Cyberangle002/expense-tracker  
 (Replace yourusername with your GitHub username)
 
 ---
