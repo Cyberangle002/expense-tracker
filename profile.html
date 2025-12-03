@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile | Expense Tracker Pro</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+
+  <!-- Mobile Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+
+  <aside class="sidebar slide-sidebar" id="sidebar">
+    <h2 class="logo">💰 TrackerPro</h2>
+
+    <nav>
+      <a href="index.html">🏠 Dashboard</a>
+      <a href="transactions.html">📄 Transactions</a>
+      <a href="analytics.html">📊 Analytics</a>
+      <a href="reports.html">📘 Reports</a>
+      <a href="settings.html">⚙ Settings</a>
+      <a href="budget.html">💰 Budget</a>
+      <a href="profile.html" class="active">👤 Profile</a>
+      <a href="goals.html">🎯 Goals</a>
+      <a href="notification.html">🔔 Notifications</a>
+    </nav>
+  </aside>
+
+  <main class="main fade-page">
+
+    <h1>Your Profile</h1>
+
+    <section class="glass profile-box fade-in">
+      <img id="profileImg" src="assets/image/profle 1.avif" class="profile-pic">
+
+      <!-- NEW BUTTON ADDED HERE -->
+      <div class="upload-btn-box">
+        <button class="btn glow-btn" onclick="document.getElementById('uploadPhoto').click()">
+          Change Profile Picture
+        </button>
+        <input type="file" id="uploadPhoto" accept="image/*" hidden>
+      </div>
+      <!-- END NEW BUTTON -->
+
+      <div class="info">
+        <input id="profileName" type="text" placeholder="Your Name">
+        <input id="profileEmail" type="email" placeholder="Email Address">
+        <input id="profilePhone" type="text" placeholder="Phone Number">
+
+        <button class="btn glow-btn" onclick="saveProfile()">Save Profile</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/profile.js"></script>
+
+  <!-- Small JS to make sidebar toggle on mobile -->
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

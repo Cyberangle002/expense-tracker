@@ -1,0 +1,216 @@
+/* =========================================
+   GLOBAL THEME + LAYOUT (styles.css)
+   ========================================= */
+
+:root {
+  --bg: #f6f8fb;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #0b79d0;
+  --accent: #ff6b6b;
+  --card: #ffffff;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --radius: 12px;
+
+  --dark-bg: #0d1117;
+  --dark-card: rgba(255,255,255,0.05);
+  --dark-text: #e6e6e6;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: white;
+  border-right: 1px solid rgba(0,0,0,0.05);
+  padding: 20px;
+  position: fixed;
+  top: 0; bottom: 0; left: 0;
+  box-shadow: var(--shadow);
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar nav a {
+  padding: 10px 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: var(--primary);
+  color: white;
+  transform: translateX(4px);
+}
+
+/* MAIN */
+.main {
+  margin-left: 260px;
+  padding: 28px;
+  width: 100%;
+}
+
+/* CARDS */
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.chart-card,
+.add-box,
+.table-box {
+  background: var(--card);
+  padding: 18px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* TABLE */
+.table-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-box th,
+.table-box td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* INPUTS */
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+/* DARK MODE */
+body.dark {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark .sidebar {
+  background: #0f172a;
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+body.dark .sidebar a {
+  color: #ddd;
+}
+
+body.dark .sidebar a.active {
+  background: var(--primary);
+  color: white;
+}
+
+body.dark .card,
+body.dark .chart-card,
+body.dark .add-box,
+body.dark .table-box {
+  background: var(--dark-card);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(14px);
+}
+
+body.dark input,
+body.dark select {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.2);
+  color: white;
+}
+
+body.dark button {
+  color: white;
+}
+
+/* PROFILE PAGE */
+.profile-box {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 160px;        /* FIX: control image size */
+    height: 160px;       /* FIX: square for perfect circle */
+    object-fit: cover;   /* prevents stretching */
+    border-radius: 50%;  /* makes it circular */
+    margin-bottom: 15px;
+    box-shadow: var(--shadow);
+}
+.upload-btn-box {
+    margin-bottom: 20px;
+}
+
+.upload-btn-box .btn {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* ==========================
+   DARK MODE THEME VARIABLES
+   ========================== */
+
+.dark {
+  --bg: #121212;
+  --bg2: #1e1e1e;
+  --text: #ffffff;
+  --text-light: #cccccc;
+  --card-bg: #1a1a1a;
+  --primary: #4da3ff;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Apply dark mode */
+.dark body,
+body.dark {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+body.dark .sidebar {
+  background: var(--bg2) !important;
+}
+
+body.dark .settings-box,
+body.dark .card,
+body.dark .transaction,
+body.dark .profile-card {
+  background: var(--card-bg) !important;
+  color: var(--text) !important;
+}
+
+body.dark .btn {
+  background: var(--primary) !important;
+  color: #fff !important;
+}

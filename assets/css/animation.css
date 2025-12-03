@@ -1,0 +1,46 @@
+/* Fade Animation */
+.fade-in {
+  animation: fade 0.6s ease-in;
+}
+@keyframes fade {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide Animation */
+.slide-in {
+  animation: slide 0.5s ease-out;
+}
+@keyframes slide {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Glow Buttons */
+.glow-btn {
+  background: var(--primary);
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,120,255,0.4);
+  transition: 0.25s;
+}
+.glow-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0,140,255,0.7);
+}
+
+/* Danger Button */
+.danger-btn {
+  background: #ff4d4d;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.danger-btn:hover {
+  background: #e60000;
+  transform: scale(1.05);
+}

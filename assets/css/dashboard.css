@@ -1,0 +1,32 @@
+
+#dashChart {
+  height: 260px !important;
+}
+
+.chart-card {
+  margin-top: 20px;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.recent-box {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-top: 20px;
+}
+
+.recent-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-item:last-child {
+  border-bottom: none;
+}

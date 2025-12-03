@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budget | TrackerPro</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <h2 class="logo">💰 TrackerPro</h2>
+    <nav>
+      <a href="index.html" class="active">🏠 Dashboard</a>
+        <a href="transactions.html">📄 Transactions</a>
+        <a href="analytics.html">📊 Analytics</a>
+        <a href="reports.html">📘 Reports</a>
+        <a href="settings.html">⚙ Settings</a>
+        <a href="budget.html">💰 Budget</a>
+        <a href="profile.html">👤 Profile</a>
+        <a href="goals.html">🎯 Goals</a>
+        <a href="notification.html">🔔 Notifications</a>
+    </nav>
+  </aside>
+
+  <main class="main fade-page">
+    <h1>Monthly Budget</h1>
+
+    <section class="card glass fade-in">
+      <h2>Set Monthly Budget</h2>
+      <input type="number" id="budgetInput" placeholder="Enter budget amount">
+      <button class="btn glow-btn" onclick="saveBudget()">Save Budget</button>
+    </section>
+
+    <section class="card glass fade-in">
+      <h2>Budget Overview</h2>
+      <p>Total Budget: <span id="totalBudget">₹0</span></p>
+      <p>Total Expenses: <span id="totalExp">₹0</span></p>
+      <p>Remaining: <span id="remaining">₹0</span></p>
+    </section>
+  </main>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/settings.js"></script>
+<script src="assets/js/budget.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics - TrackerPro</title>
+
+    <!-- CSS FILE -->
+
+    <link rel="stylesheet" href="assets/css/analytics.css">
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="logo">💰 TrackerPro</h2>
+        <nav>
+            <a href="index.html">🏠 Dashboard</a>
+            <a href="transactions.html">📄 Transactions</a>
+            <a href="analytics.html" class="active">📊 Analytics</a>
+            <a href="reports.html">📘 Reports</a>
+            <a href="settings.html">⚙ Settings</a>
+            <a href="budget.html">💰 Budget</a>
+            <a href="profile.html">👤 Profile</a>
+            <a href="goals.html">🎯 Goals</a>
+            <a href="notification.html">🔔 Notifications</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN PAGE -->
+    <div class="analytics-page">
+
+        <h1 class="analytics-title">Analytics Overview</h1>
+
+        <!-- STAT CARDS -->
+        <div class="graph-row">
+            <div class="stat-card">
+                <div class="stat-number">1,245</div>
+                <div class="stat-label">Total Visitors</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">428</div>
+                <div class="stat-label">New Users</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">87</div>
+                <div class="stat-label">Bad Reviews</div>
+            </div>
+        </div>
+
+        <!-- VISITOR GRAPH -->
+        <div class="graph-card">
+            <h3>Visitors This Week</h3>
+            <div class="graph-container">
+                <canvas id="visitorChart"></canvas>
+            </div>
+        </div>
+
+        <!-- RATINGS GRAPH -->
+        <div class="graph-card">
+            <h3>Ratings Trend</h3>
+            <div class="graph-container">
+                <canvas id="ratingChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CHART JS LIBRARY -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/analytics.js"></script>
+
+</body>
+</html>

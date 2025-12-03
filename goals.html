@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Savings Goals | TrackerPro</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <h2 class="logo">💰 TrackerPro</h2>
+    <nav>
+      <a href="index.html" class="active">🏠 Dashboard</a>
+        <a href="transactions.html">📄 Transactions</a>
+        <a href="analytics.html">📊 Analytics</a>
+        <a href="reports.html">📘 Reports</a>
+        <a href="settings.html">⚙ Settings</a>
+        <a href="budget.html">💰 Budget</a>
+        <a href="profile.html">👤 Profile</a>
+        <a href="goals.html">🎯 Goals</a>
+        <a href="notification.html">🔔 Notifications</a>
+    </nav>
+  </aside>
+
+  <main class="main fade-page">
+    <h1>Savings Goals</h1>
+
+    <!-- Add new goal -->
+    <section class="glass card fade-in">
+      <h2>Add New Goal</h2>
+
+      <input id="goalName" type="text" placeholder="Goal Name (e.g., Buy Laptop)">
+      <input id="goalAmount" type="number" placeholder="Target Amount (₹)">
+      <input id="goalSaved" type="number" placeholder="Already Saved (₹)">
+
+      <button class="btn glow-btn" onclick="addGoal()">➕ Add Goal</button>
+    </section>
+
+    <!-- Goals List -->
+    <section class="glass card fade-in" style="margin-top:20px;">
+      <h2>Your Goals</h2>
+      <div id="goalsList"></div>
+    </section>
+
+  </main>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/goals.js"></script>
+
+</body>
+</html>

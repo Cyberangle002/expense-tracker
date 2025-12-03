@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transactions | Expense Tracker Pro</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/animation.css" />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2 class="logo">💰 TrackerPro</h2>
+    <nav>
+<a href="index.html" class="active">🏠 Dashboard</a>
+        <a href="transactions.html">📄 Transactions</a>
+        <a href="analytics.html">📊 Analytics</a>
+        <a href="reports.html">📘 Reports</a>
+        <a href="settings.html">⚙ Settings</a>
+        <a href="budget.html">💰 Budget</a>
+        <a href="profile.html">👤 Profile</a>
+        <a href="goals.html">🎯 Goals</a>
+        <a href="notification.html">🔔 Notifications</a>    </nav>
+  </aside>
+
+  <main class="main">
+    <h1>Manage Transactions</h1>
+
+    <section class="add-box fade-in">
+      <h2>Add New Transaction</h2>
+
+      <form id="addForm">
+        
+        <select id="type" name="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+
+        <input type="date" id="date" name="date">
+
+        <input type="text" id="desc" name="description" placeholder="Description">
+
+        <select id="cat" name="category">
+          <option value="Food">Food</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Transport">Transport</option>
+          <option value="Entertainment">Entertainment</option>
+        </select>
+
+        <input type="number" id="amount" name="amount" placeholder="Amount">
+
+        <button type="submit">Add Transaction</button>
+      </form>
+    </section>
+
+    <section class="table-box slide-in">
+      <h2>All Transactions</h2>
+
+      <table id="tranTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tranBody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/transactions.js"></script>
+  <script src="assets/js/settings.js"></script>
+
+
+</body>
+</html>

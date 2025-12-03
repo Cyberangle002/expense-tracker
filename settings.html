@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Settings | Expense Tracker Pro</title>
+
+  <!-- MAIN STYLES -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">💰 TrackerPro</h2>
+    <nav>
+      <a href="index.html">🏠 Dashboard</a>
+      <a href="transactions.html">📄 Transactions</a>
+      <a href="analytics.html">📊 Analytics</a>
+      <a href="reports.html">📘 Reports</a>
+      <a href="settings.html" class="active">⚙ Settings</a>
+      <a href="budget.html">💰 Budget</a>
+      <a href="profile.html">👤 Profile</a>
+      <a href="goals.html">🎯 Goals</a>
+      <a href="notification.html">🔔 Notifications</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <h1>Settings</h1>
+
+    <!-- THEME SETTINGS -->
+    <section class="settings-box fade-in">
+      <h2>Appearance</h2>
+      <button class="btn glow-btn" onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
+    </section>
+
+    <!-- DELETE DATA -->
+    <section class="settings-box fade-in" style="margin-top:20px;">
+      <h2>Data Control</h2>
+      <button class="btn danger-btn shake-btn" onclick="resetAll()">🗑 Delete All Transactions</button>
+    </section>
+  </main>
+
+  <!-- JS FILES -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/setting.js"></script>
+
+</body>
+</html>

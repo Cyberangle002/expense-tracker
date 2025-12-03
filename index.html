@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | Expense Tracker Pro</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2 class="logo">💰 TrackerPro</h2>
+      <nav>
+        <a href="index.html" class="active">🏠 Dashboard</a>
+        <a href="transactions.html">📄 Transactions</a>
+        <a href="analytics.html">📊 Analytics</a>
+        <a href="reports.html">📘 Reports</a>
+        <a href="settings.html">⚙ Settings</a>
+        <a href="budget.html">💰 Budget</a>
+        <a href="profile.html">👤 Profile</a>
+        <a href="goals.html">🎯 Goals</a>
+        <a href="notification.html">🔔 Notifications</a>
+      </nav>
+    </aside>
+
+    <!-- DASHBOARD MAIN -->
+    <main class="main">
+      <h1 class="title">Dashboard Overview</h1>
+
+      <section class="cards">
+        <div class="card" data-aos="fade-up">
+          <h3>Total Income</h3>
+          <p id="dash-income">₹0.00</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h3>Total Expenses</h3>
+          <p id="dash-expense">₹0.00</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Net Balance</h3>
+          <p id="dash-net">₹0.00</p>
+        </div>
+      </section>
+
+      <div class="chart-card" data-aos="zoom-in">
+        <h2>Expense Overview</h2>
+        <canvas id="dashChart"></canvas>
+      </div>
+      <div class="recent-box" data-aos="fade-up">
+        <h2>Recent Transactions</h2>
+        <div id="recent-list" class="recent-list"></div>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/settings.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
